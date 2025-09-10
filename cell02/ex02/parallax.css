@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.bg1 {
+    background-image: url("https://media.tenor.com/Y_7h8dRhao0AAAAe/sigma.png");
+}
+
+.bg2 {
+    background-image: url("https://content.imageresizer.com/images/memes/Sigma-Male-meme-6.jpg");
+}
+
+.content h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.black-block {
+    height: 50vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
