@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator (jQuery)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #ffe4e4;
+        }
+        .calc-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        input, select, button {
+            margin: 5px;
+            padding: 8px;
+            font-size: 16px;
+        }
+        button {
+            cursor: pointer;
+            border: none;
+            background: #e79bce;
+            color: white;
+            border-radius: 6px;
+        }
+        button:hover {
+            background: #c042ad;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="calc-box">
+        <input type="text" id="left" placeholder="Left number">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="right" placeholder="Right number">
+        <button id="calcBtn">Try me!</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#calcBtn").click(function() {
+                const leftVal = $("#left").val().trim();
+                const rightVal = $("#right").val().trim();
+                const op = $("#operator").val();
+
+               
+                if (!/^\d+$/.test(leftVal) || !/^\d+$/.test(rightVal)) {
+                    alert("Error :(");
+                    return;
+                }
+
+                const left = parseInt(leftVal, 10);
+                const right = parseInt(rightVal, 10);
+                let result;
+
+                
+                if ((op === "/" || op === "%") && right === 0) {
+                    alert("It’s over 9000!");
+                    return;
+                }
+
+                switch (op) {
+                    case "+": result = left + right; break;
+                    case "-": result = left - right; break;
+                    case "*": result = left * right; break;
+                    case "/": result = left / right; break;
+                    case "%": result = left % right; break;
+                }
+
+                alert(result);
+                console.log(result);
+            });
+
+            setInterval(() => {
+                alert("Please, use me...");
+            }, 30000);
+        });
+    </script>
+</body>
+</html>
