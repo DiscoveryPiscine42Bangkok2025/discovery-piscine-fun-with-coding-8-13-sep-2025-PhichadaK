@@ -1,0 +1,133 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.parallax {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+}
+
+#contact .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.parallax .overlay {
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.parallax img:hover {
+    transform: scale(1.05);
+}
+
+#profile {
+    background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80');
+}
+
+#skill {
+    background-image: url('https://images.pexels.com/photos/7919/pexels-photo.jpg');
+}
+
+#contact {
+    background-image: url('https://images.pexels.com/photos/932638/pexels-photo-932638.jpeg');
+}
+
+.navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.parallax h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-family: serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.parallax p {
+    font-size: 1.5rem;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #240c0c;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#profile h4 {
+    color:antiquewhite
+}
+
+#profile p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin-bottom: 8px;
+}
+
+.skill-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.skill-gallery img {
+    width: 170px;
+    height: 140x;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.skill-gallery img:hover {
+   transform: scale(1.05);
+}
+
+.socials img {
+    width: 100px;
+    margin: 0 10px;
+    vertical-align: middle;
+    transition: all 0.2s ease;
+    border-radius: 50%;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+}

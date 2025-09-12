@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Trirong");
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
+body {
+    margin: 0;
+    font-family: 'Mulish', serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.250)),
+        url("https://images2.alphacoders.com/714/thumb-1920-714339.png");
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container {
+    text-align: center;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 1.678);
+
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.3); 
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.5);
+    display: inline-block; 
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'audiowide', serif;
+    text-shadow:0px 2px 4px rgba(0, 0, 0, 0.534);
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 25px;
+    background: #fff;
+    color: #5b2400;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+    box-shadow: 0 8px 15px rgba(126, 71, 22, 0.589);
+}
+
+.btn:hover {
+    background: linear-gradient(90deg,#410d0d,#8e4000);
+    color: #ffffff;
+    transform: scale(1.08);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.589);
+}
